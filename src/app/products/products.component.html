@@ -1,0 +1,6 @@
+<h2>Inspected Products</h2>
+<ul class="products">
+  <li *ngFor="let product of products">
+    <span class="badge">{{product.id}}</span>{{(product.code + "").slice(0,50)}}<span class="time">{{product.created_at}}</span>
+  </li>
+</ul>
